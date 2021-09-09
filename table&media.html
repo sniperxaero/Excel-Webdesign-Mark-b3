@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Table and Media</title>
+    <style>
+        tr {
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        #crop {
+            width: 50px;
+            height: 50px;
+        }
+
+        #video {
+            height: 300px;
+            width: 300px;
+            resize: both;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body class=black>
+    <h4 class="white-text">Standard table</h4>
+    <table class="bordered white-text">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Date</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Kara Ernser</td>
+                <td>Moen Group</td>
+                <td>Fri Mar 05 2021 04:32:55 GMT+0800 (Philippine Standard Time)</td>
+                <td><a href="MyISAM">MyISAM</a></td>
+            </tr>
+            <tr>
+                <td>Amber Will</td>
+                <td>Yost - Hartmann</td>
+                <td>Wed Nov 11 2020 06:40:55 GMT+0800 (Philippine Standard Time)</td>
+                <td><a href="BLACKHOLE">BLACKHOLE</a></td>
+            </tr>
+            <tr>
+                <td>Edgar Kassulke</td>
+                <td>Cassin, Hackett and Beatty</td>
+                <td>Sat Jan 09 2021 18:46:20 GMT+0800 (Philippine Standard Time)</td>
+                <td><a href="CSV">CSV</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <!--Striped table-->
+    <h4 class="white-text">Striped table</h4>
+    <table class="striped white-text">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Date</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Kara Ernser</td>
+                <td>Moen Group</td>
+                <td>Fri Mar 05 2021 04:32:55 GMT+0800 (Philippine Standard Time)</td>
+                <td><a href="MyISAM">MyISAM</a></td>
+            </tr>
+            <tr>
+                <td>Amber Will</td>
+                <td>Yost - Hartmann</td>
+                <td>Wed Nov 11 2020 06:40:55 GMT+0800 (Philippine Standard Time)</td>
+                <td><a href="BLACKHOLE">BLACKHOLE</a></td>
+            </tr>
+            <tr>
+                <td>Edgar Kassulke</td>
+                <td>Cassin, Hackett and Beatty</td>
+                <td>Sat Jan 09 2021 18:46:20 GMT+0800 (Philippine Standard Time)</td>
+                <td><a href="CSV">CSV</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <!--highlighted table-->
+    <h4 class="white-text">Highlighted table</h4>
+    <table class="highlight white-text wave-effect">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Date</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Kara Ernser</td>
+                <td>Moen Group</td>
+                <td>Fri Mar 05 2021 04:32:55 GMT+0800 (Philippine Standard Time)</td>
+                <td><a href=" MyISAM">MyISAM</a></td>
+            </tr>
+            <tr>
+                <td>Amber Will</td>
+                <td>Yost - Hartmann</td>
+                <td>Wed Nov 11 2020 06:40:55 GMT+0800 (Philippine Standard Time)</td>
+                <td><a href="BLACKHOLE">BLACKHOLE</a></td>
+            </tr>
+            <tr>
+                <td>Edgar Kassulke</td>
+                <td>Cassin, Hackett and Beatty</td>
+                <td>Sat Jan 09 2021 18:46:20 GMT+0800 (Philippine Standard Time)</td>
+                <td><a href="CSV">CSV</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <!--responsive table-->
+    <h4 class="white-text">Responsive table</h4>
+
+    <table class="responsive-table wave-effect white-text">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Date</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Kara Ernser</td>
+                <td>Moen Group</td>
+                <td>Fri Mar 05 2021 04:32:55 GMT+0800 (Philippine Standard Time)</td>
+                <td><a href=" MyISAM">MyISAM</a></td>
+            </tr>
+            <tr>
+                <td>Amber Will</td>
+                <td>Yost - Hartmann</td>
+                <td>Wed Nov 11 2020 06:40:55 GMT+0800 (Philippine Standard Time)</td>
+                <td><a href="BLACKHOLE">BLACKHOLE</a></td>
+            </tr>
+            <tr>
+                <td>Edgar Kassulke</td>
+                <td>Cassin, Hackett and Beatty</td>
+                <td>Sat Jan 09 2021 18:46:20 GMT+0800 (Philippine Standard Time)</td>
+                <td><a href="CSV">CSV</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <br><br>
+    <!--Responsive Image with Gif-->
+    <h3 class="white-text center"> Responsive image with Gif</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l12">
+                <img class=" circle responsive-img" width="200px" height="100px" src="img/img1.jpg">
+                <div class="col s12 m6">
+                    <img id="#crop" class="responsive-img" width="400" src="img/black.gif">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <!--Video Embeded rezize-->
+    <h4 class="white-text">Video Embeded</h4>
+
+    <div height="200" id="#video" class="center">
+        <iframe width="400" height="200" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0"></iframe>
+    </div>
+
+
+
+
+
+    <!---JQueryCDN--->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
