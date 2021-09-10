@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Forms</title>
+
+    <style>
+        .dropdown-content li>a,
+        .dropdown-content li>span {
+            font-size: 16px;
+            color: #093d09;
+            display: block;
+            line-height: 22px;
+            padding: 14px 16px;
+            background-color: rgb(209, 163, 106);
+        }
+
+        .select-dropdown li.disabled,
+        .select-dropdown li.disabled>span,
+        .select-dropdown li.optgroup {
+            color: rgba(255, 255, 255, 0.795);
+            background-color: rgba(5, 5, 5, 0.658);
+        }
+    </style>
+</head>
+
+<body class="light-green lighten-5">
+    <!--text area-->
+    <h3 class="deep-orange-text accent-4 center">Text Area</h3>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="input-field">
+                        <input type="text" class="text">
+                        <label for="">Input text here</label></input>
+                    </div>
+                </div>
+            </div>
+
+            <!--validator-->
+            <h3 class="deep-orange-text accent-4 center">Validator</h3>
+            <div class="row">
+                <div class="col s6 m6">
+                    <div class="input-field">
+                        <input id="firstname" type="text" class="validate">
+                        <label for="firstname">First name</label>
+                        <span class="helper-text" data-error="input valid name" data-success="valid"></span>
+                        </input>
+                    </div>
+                </div>
+                <div class="col s6 m6">
+                    <div class="input-field">
+                        <input id="lastname" type="text" class="validate">
+                        <label for="lastname">Last name</label>
+                        <span class="helper-text" data-error="input valid name" data-success="valid"></span>
+                        </input>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s6 m6">
+                        <div class="input-field">
+                            <input id="phone" type="number" class="validate">
+                            <label for="phone"><i class="material-icons">phone_iphone</i>Mobile number
+                            </label><span class="helper-text" data-error="input valid number"
+                                data-success="valid"></span>
+                            </input>
+                        </div>
+                    </div>
+
+                    <div class="col s6 m6">
+                        <!--prefix icon-->
+                        <div class="input-field">
+                            <i class="material-icons prefix blue-text solid">email</i>
+                            <input id="email" type="email" class="validate">
+                            <label for="email"> Email
+                            </label>
+                            <span class="helper-text" data-error="input valid email" data-success=""></span>
+                            </input>
+
+                        </div>
+                        <!--End of row-->
+                    </div>
+                    <!--Select-->
+                    <h3 class="deep-orange-text accent-4 center">Selector and radio button</h3>
+                    <div class="row">
+                        <div class="col s12 m6 input-field">
+                            <div class="multiple">
+                                <select>
+                                    <option class="black" value="" disabled selected>Please select element</option>
+                                    <option class="black" value="1">Earth</option>
+                                    <option value="2">Water</option>
+                                    <option value="3">Fire</option>
+                                    <option value="4">Thunder</option>
+                                    <option value="5" disabled selected>Dark </option>
+                                    <option value="6" disabled selected>Light </option>
+                                </select>
+                            </div>
+                            <span class="brown-text darken-4">Please Select element</span>
+                        </div>
+
+                        <!--radio button-->
+
+                        <div class="col s12 m6">
+                            <h6 class="cyan-text darken-4">Please select one</h6>
+                            <label>
+                                <input type="radio" name="radio" id="">
+                                <span class="black-text">fisrt</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="radio" id="">
+                                <span class="black-text">second</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="radio" id="">
+                                <span class="black-text">third</span>
+                            </label>
+                            <label>
+                                <input class="with-gap" type="radio" name="radio" id="">
+                                <span class="red-text">with gap</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="radio" id="" disabled="disable">
+                                <span class="grey-text">disable</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!--check box-->
+                    <div class="row">
+                        <h3 class="deep-orange-text accent-4 center">Check box</h3>
+                        <div class="col s12 m7">
+
+                            <label>
+                                <input type="checkbox" />
+                                <span>check1</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox" checked="checked" />
+                                <span>check2</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <span>Filled in</span>
+                            </label>
+
+                            <label>
+                                <input id="indeterminate-checkbox" type="checkbox" />
+                                <span>Indeterminate Style</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox" checked="checked" disabled="disabled" />
+                                <span>Green disable</span>
+                            </label>
+
+                            <label>
+                                <input class="grey" type="checkbox" disabled="disabled" />
+                                <span>Disable</span>
+                            </label>
+
+                        </div>
+                    </div>
+
+
+
+        </form>
+        <!--end of container-->
+    </div>
+
+
+    <!---JQueryCDN--->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+    </script>
+
+</body>
+
+</html>

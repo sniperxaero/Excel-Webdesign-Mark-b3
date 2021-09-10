@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Collapsible</title>
+
+</head>
+
+<body class="orange lighten-5">
+
+
+    <div class="container">
+        <form action="">
+            <h3 class="teal-text darken-4">Collapsible Default</h3>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header active"><i class="material-icons green-text">key</i>First key</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    <div class="collapsible-body active"><span class="horozontal-card"> <img src="img/img1.jpg"
+                                width="20%" alt="">
+                        </span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="collapsible-header"><i class="material-icons red-text">key</i>Second key</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Veritatis nam natus eos neque quis voluptatem beatae tempore mollitia ducimus
+                            delectus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat vel non, quasi
+                            facilis modi laborum saepe repudiandae earum asperiores fugit soluta sit eligendi, ex
+                            repellendus hic voluptas autem eos ab? Incidunt, aliquid cum ea sunt sequi deleniti nihil
+                            reiciendis adipisci?</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons blue-text">key</i>Third key</div>
+                    <div class="collapsible-body"><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Labore, cum. Laborum, dolorem vel autem voluptatem nulla quos perferendis dignissimos, a
+                            labore culpa modi expedita. Voluptate est fugit temporibus atque quasi expedita numquam,
+                            tempore eligendi reprehenderit nobis! Similique, blanditiis recusandae dolor veritatis
+                            accusamus aspernatur suscipit consequatur praesentium at! Iure accusantium nulla architecto
+                            necessitatibus. Recusandae, ratione possimus? Placeat quos laboriosam perferendis
+                            error.</span></div>
+                </li>
+            </ul> <br><br><br>
+
+            <!--collapsible popout-->
+            <h3 class="teal-text darken-4">Collapsible Popout</h3>
+            <ul class="collapsible popout">
+                <li>
+                    <div class="collapsible-header active"><i class="material-icons red-text">key</i>First key</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    <div class="collapsible-body active"><span class="horozontal-card"> <img src="img/img1.jpg"
+                                width="20%" alt="">
+                        </span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="collapsible-header"><i class="material-icons blue-text">key</i>Second key</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Veritatis nam natus eos neque quis voluptatem beatae tempore mollitia ducimus
+                            delectus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat vel non, quasi
+                            facilis modi laborum saepe repudiandae earum asperiores fugit soluta sit eligendi, ex
+                            repellendus hic voluptas autem eos ab? Incidunt, aliquid cum ea sunt sequi deleniti nihil
+                            reiciendis adipisci?</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons green-text">key</i>Third Key</div>
+                    <div class="collapsible-body"><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Labore, cum. Laborum, dolorem vel autem voluptatem nulla quos perferendis dignissimos, a
+                            labore culpa modi expedita. Voluptate est fugit temporibus atque quasi expedita numquam,
+                            tempore eligendi reprehenderit nobis! Similique, blanditiis recusandae dolor veritatis
+                            accusamus aspernatur suscipit consequatur praesentium at! Iure accusantium nulla architecto
+                            necessitatibus. Recusandae, ratione possimus? Placeat quos laboriosam perferendis
+                            error.</span></div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Veritatis nam natus eos neque quis voluptatem beatae tempore mollitia ducimus
+                            delectus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat vel non, quasi
+                            facilis modi laborum saepe repudiandae earum asperiores fugit soluta sit eligendi, ex
+                            repellendus hic voluptas autem eos ab? Incidunt, aliquid cum ea sunt sequi deleniti nihil
+                            reiciendis adipisci?</span></div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Veritatis nam natus eos neque quis voluptatem beatae tempore mollitia ducimus
+                            delectus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat vel non, quasi
+                            facilis modi laborum saepe repudiandae earum asperiores fugit soluta sit eligendi, ex
+                            repellendus hic voluptas autem eos ab? Incidunt, aliquid cum ea sunt sequi deleniti nihil
+                            reiciendis adipisci?</span></div>
+                </li>
+            </ul>
+
+
+        </form>
+    </div>
+
+
+    <!---JQueryCDN--->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
+    </script>
+</body>
+
+</html>
