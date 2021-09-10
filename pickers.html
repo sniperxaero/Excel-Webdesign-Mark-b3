@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Pickers</title>
+
+    <style>
+        form {
+            margin: 30px;
+            border: 20px;
+            padding: 50px;
+        }
+
+        .datepicker-date-display,
+        .timepicker-digital-display {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1 auto;
+            -ms-flex: 1 auto;
+            flex: 1 auto;
+            background-color: #4ee467;
+            color: rgb(5, 68, 49);
+            padding: 20px 22px;
+            font-weight: 500;
+        }
+
+        .switch label input[type=checkbox]:checked+.lever:after {
+            background-color: #6310a7;
+        }
+
+        .switch label .lever:after {
+            background-color: #cba5e0;
+        }
+
+        .switch label input[type=checkbox]:checked+.lever {
+            background-color: #000000;
+
+        }
+
+        input[type=range] {
+            position: relative;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            width: 40%;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <form id="form1" class="grey lighten-2" action="">
+            <h2 class="">Date Pickers</h2>
+            <div>
+                <a class="datepicker waves-effect waves-light btn blue">
+                    <i class="material-icons right">date_range</i>Please select date</a>
+            </div>
+            <br>
+            <h2 class="">Time pickers</h2>
+            <div>
+                <a class="timepicker waves-effect waves-light btn brown">
+                    <i class="material-icons right">schedule</i>Please select time range</a>
+            </div>
+            <br><br><br>
+            <!-- Switch -->
+            <h2 class="">Switches</h2>
+            <div class="switch">
+                <label class=black-text>
+                    off
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    On
+                </label>
+            </div>
+
+            <!-- Disabled Switch -->
+            <div class="switch">
+                <label>
+                    Off
+                    <input disabled type="checkbox">
+                    <span class="lever"></span>
+                    On
+                </label>
+            </div>
+
+            <!--Slider-->
+            <h2 class="">Slider</h2>
+            <div id="slider">
+                <p class="range-field">
+                    <input type="range" id="test5" min="20" max="80" />
+                </p>
+            </div>
+
+        </form>
+
+        <!--end of container-->
+    </div>
+
+
+
+
+
+
+    <!---JQueryCDN--->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.datepicker').datepicker();
+            $('.timepicker').timepicker();
+
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
